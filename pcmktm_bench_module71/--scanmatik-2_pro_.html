@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Подключение к Scanmatik 2/Pro.</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="">
+   <meta name="description" content="Подключение к Scanmatik 2/Pro.">
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251">
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=10" />
+   <link type="text/css" href="default.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { 
+   margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }  
+
+div#printheader { 
+   display: none;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+   .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+   .sync-toc a:visited { color: #ffffff; }
+   .sync-toc a:hover { text-decoration: underline; }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>  
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+
+<div id="printheader"><h1 class="p_Heading1" style="text-align: center;"><span class="f_Heading1">Подключение к Scanmatik 2/Pro.</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   &raquo;No topics above this level&laquo;
+   </p>
+   <h1 class="p_Heading1" style="text-align: center;"><span class="f_Heading1">Подключение к Scanmatik 2/Pro.</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="new-topic2.html"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="new-topic4.html"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="-gpt2.html"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f9faf9;">Вариант 1.</span><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">&nbsp;Прямое подключение к ОБД разъёму Scanmatik 2:</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">OBD1 - GPT1</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">OBD2 - GPT2</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">OBD4, 5 - масса</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">OBD6 - CAN-H</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">OBD14 - CAN-L</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">OBD16 - +12V</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">ОБЯЗАТЕЛЬНА установка резистора 120 ом между CAN-H и CAN-L!</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">Ручное управление питанием!</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f9faf9;">Вариант 2.</span><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">&nbsp;Прямое подключение к DB25 Scanmatik 2:</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">DB25-23 - GPT1</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">DB25-4 - GPT2</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">DB25-20, 21 - масса</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">DB25-8 - CAN-H</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">DB25-9 - CAN-L</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">DB25-12, 13- +12V</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">ОБЯЗАТЕЛЬНА установка резистора 120 ом между CAN-H и CAN-L!</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">Ручное управление питанием!</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f9faf9;">Вариант 3.</span><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">&nbsp;Подключение через PowerBox for PCMflash или GPT Adapter или &quot;Кесс-коробка&quot; без доработок&nbsp;</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">Этот вариант не рекомендуется, т.к. в таком случае на GPT пинах может появиться опасное напряжение (до +12в), но если не соваться с ними внутрь блоков, проблем быть не должно. Для подключения просто воткнуть Scanmatik в ОБД разъём приборов, а в Настройках загрузчика поставить галку напротив &quot;Альтернативные пины GPT для Scanmatik (не рекомендуется)&quot;. После этого GPT сигналы Scanmatik будут на&nbsp;</span><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f9faf9;">желтом</span><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">&nbsp;и&nbsp;</span><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f9faf9;">фиолетовом</span><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">&nbsp;проводах (K-Line и Vpp).</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f9faf9;">Вариант 4.</span><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">&nbsp;Доработка Powerbox (обращайтесь к производителю) или новый Powerbox с серой наклейкой. Используются штатные выходы GPT PowerBox, полностью безопасно.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f9faf9;">Вариант 5.</span><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">&nbsp;Скоро будет доступен у дилеров (не у меня), boot/bench кабель для Scanmatic 2/Pro, в DB-25 разъёме которого смонтирована схема автоматического питания, а также управления BOOT пинами для 53го пакета. Т.е. это продвинутый вариант номер 2. Поставщик - не Scanmatik, так что туда запросы слать не нужно!</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f9faf9;">Фото прототипа кабеля с MED17.7.3.1, работа в BSL.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="scanmatik-boot" style="margin:0;width:7.2083in;height:3.5000in;border:none" src="scanmatik-boot.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f4f4f4;">Идеи для &quot;колхозных&quot; вариантов кабелей.&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f4f4f4;">Вариант А. &quot;БОМЖ-кабель&quot;</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">&nbsp;можно изготовить самостоятельно по варианту 1. Для этого можно воспользоваться кабелем-заготовкой от пластиковой коробки, которую китайцы клали в клоны кесса. Оттуда можно взять провода с пинами и крокодилами, корпус разъёма DB-25, а в магазине потребуется купить недостающие клеммы, разъём DB-25 &quot;мама&quot;, защитный диод (можно попробовать тоже взять из коробки) и резистор 120 ом на кан шину. Если повезёт, то кабель будет с резиновой втулкой, которая вставится в разъём DB-25. Фото внизу сообщения. Управление питанием ручное, можно просто в нужный момент подключаться к АКБ автомобиля.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">Фото - что было:</span></p>
+<p class="p_Normal"><img alt="kess-plastic" style="margin:0;width:8.0104in;height:4.6563in;border:none" src="kess-plastic.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">Фото - что стало:</span></p>
+<p class="p_Normal"><img alt="scanmatik2-diy" style="margin:0;width:7.4688in;height:4.5833in;border:none" src="scanmatik2-diy.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">Куда припаять провода:</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">DB25-12 - диод - красный - внешнее питание</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">DB25-13 -&nbsp;</span><span style="font-size: 11pt; font-style: italic; color: #333333; background-color: #f4f4f4;">(серый - тумблер - синий)</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">&nbsp;- красный - питание ЭБУ</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">DB25-4 - оранжевый - GPT2</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">DB25-8 - белый - CAN-H</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">DB25-9 - зелёный - CAN-L</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">DB25-20 - чёрный - масса ЭБУ</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">DB25-21 - чёрный - внешнее питание</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">DB25-23 - жёлтый - GPT1</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">На картинке:</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">а) между 8 и 9 припаян резистор 120 ом (в данном случае SMD, но значения не имеет)</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">б) тумблер подключен к серому и синему проводу, эта вся конструкция включена между сканматиком (2й контакт) и красным проводом, сделано для удобства ручного питания. Можно выкинуть. Тумблер с узкими контактами, такими, чтобы можно было вставить в пины (это надёжнее, чем просто пайка).</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">в) на картинке жёлтый и оранжевый наоборот, значения это не имеет особого</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f4f4f4;">Вариант Б. &quot;Кесс-коробка&quot;</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">, та самая железная, которую переделывали для 53го пакета. Необходимо вывести GPT от Scanmatik 2 одним из двух способов: 1) внутри DB-25 прицепиться к проводам идущим от контактов 1 и 2 OBD розетки (от Scanmatik) и вывести их наружу, либо 2) если внутри вы не поставили GPT плату или давно её сожгли (и выкинули), то достаточно просто организовать &quot;транзит&quot; GPT сигналов от DB25 до DB15):&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">В шнуре к кесс коробке соединить:</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">1й контакт OBD - DB25-8</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">2й контакт OBD - DB25-20</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">в шнуре к блоку DB15 добавить два провода (если их нет)&nbsp;</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">DB15-3 - GPT1</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">DB15-12 - GPT2</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

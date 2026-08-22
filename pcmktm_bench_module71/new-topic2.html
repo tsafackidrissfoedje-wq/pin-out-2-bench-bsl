@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>71 Модуль</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="">
+   <meta name="description" content="Вся информация по подключению ЭБУ была взята из ИНТЕРНЕТА!!! &nbsp;Пакет 71 - Bosch MEDC17 Bootloader">
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251">
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=10" />
+   <link type="text/css" href="default.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { 
+   margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }  
+
+div#printheader { 
+   display: none;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+   .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+   .sync-toc a:visited { color: #ffffff; }
+   .sync-toc a:hover { text-decoration: underline; }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>  
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+
+<div id="printheader"><p class="p_Normal" style="text-align: center;"><span style="font-size: 14pt; color: #c0504d; background-color: #ffffff;">Вся информация по подключению ЭБУ была взята из ИНТЕРНЕТА!!!&nbsp;</span></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<h3 style="text-align: center; line-height: 1.73; background: #f4f4f4; margin: 0 0 0.0417in 0;"><span style="font-size: 20pt; font-weight: bold;"><a href="https://pcmflash.ru/forum/viewtopic.php?f=6&t=1932#p36902" class="weblink">Пакет 71 - Bosch MEDC17 Bootloader</a></span></h3>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   &raquo;No topics above this level&laquo;
+   </p>
+   <p class="p_Normal" style="text-align: center;"><span style="font-size: 14pt; color: #c0504d; background-color: #ffffff;">Вся информация по подключению ЭБУ была взята из ИНТЕРНЕТА!!!&nbsp;</span></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<h3 style="text-align: center; line-height: 1.73; background: #f4f4f4; margin: 0 0 0.0417in 0;"><span style="font-size: 20pt; font-weight: bold;"><a href="https://pcmflash.ru/forum/viewtopic.php?f=6&t=1932#p36902" class="weblink">Пакет 71 - Bosch MEDC17 Bootloader</a></span></h3>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <img src="btn_prev_d.gif" border="0"
+        ><a href="new-topic4.html"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="--scanmatik-2_pro_.html"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f4f4f4;">Пакет не работает по ОБД, он работает&nbsp;</span><span style="font-size: 11pt; font-style: italic; font-weight: bold; color: #333333; background-color: #f4f4f4;">только</span><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f4f4f4;">&nbsp;с прямым подключением к ЭБУ.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">Состав пакета выглядит так:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; font-style: italic; color: #333333; background-color: #f4f4f4;">MEDC17 (TC1762/1766/1792/1796) FLASH [RD/WR/CK]</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; font-style: italic; color: #333333; background-color: #f4f4f4;">MEDC17 (TC1762/1766/1792/1796) EEPROM [RD/WR]</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; font-style: italic; color: #333333; background-color: #f4f4f4;">MEDC17 (TC1724/1728/1767/1782/1784/1797) FLASH [RD/WR/CK]</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; font-style: italic; color: #333333; background-color: #f4f4f4;">MEDC17 (TC1724/1728/1767/1782/1784/1797) EEPROM [RD/WR]</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; font-style: italic; color: #333333; background-color: #f4f4f4;">MEDC17 (TC1791/1793) FLASH [RD/WR/CK]</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; font-style: italic; color: #333333; background-color: #f4f4f4;">MEDC17 (TC1791/1793) EEPROM [RD/WR]</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; font-style: italic; color: #333333; background-color: #f4f4f4;">MEDC17 BSL PASSWORD [RD]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">Пояснения:&nbsp;</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">1) FLASH - это &quot;фулл&quot; flash, включающий внутреннюю и внешнюю флеш (при наличии), в формате, которые принимает OBD пакетами. Раздельно читаться внутренний и внешний флеш не будет, если кто-то из калибровщиков не умеет работать с фуллами - пора учиться, внешний флеш больше не выпаивают для чтения и записи.</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">2) EEPROM - это внутренний eeprom процессора</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">3) BSL PASSWORD - этот пункт предназначен для чтения пароля, который может быть использован пакетом 53. Пакету 71 пароль для работы не требуется!</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f4f4f4;">Адаптер для работы - в настоящий момент СТРОГО Scanmatik 2 или Scanmatik 2 Pro.</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">&nbsp;Как и в случае с пакетом 53 реализована возможность автоматического управлением питанием через L-линию. Другие адаптеры необходимый функционал не поддерживают и перспективы неизвестны. Прошу вопросами &quot;когда&quot; или &quot;у меня есть ... адаптер&quot; не беспокоить.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">В настоящий момент известно, что&nbsp;</span><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f4f4f4;">не поддерживаются только эти ЭБУ</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">VAG MED17.5.5 TC1766 UDS (высокий TPROT у TC1766)</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">VAG MED17.1 TC1796 UDS (высокий TPROT у TC1796)</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">VAG EDC17U05 (отсутствует внутренняя флеш)</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">K/H EDC17CP14 TC1796 TPROT11 (высокий TPROT у TC1796)</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">VAG EDC17CP20 TC1796 TPROT10 UDS</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">China ME17.8.8 TC1728</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">China MED17.8.10 TC1728</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">Для таких блоков программа после передачи загрузчика выдаст сообщение&nbsp;</span><span style="font-size: 11pt; font-style: italic; color: #333333; background-color: #f4f4f4;">&quot;Неподдерживаемая версия TPROT&quot;</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">. Если такого сообщения нет, то скорее всего дело не в том, что ЭБУ не поддерживается.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f4f4f4;">Подключение к ЭБУ.</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">&nbsp;Здесь всё просто, но могут быть проблемы c подключкой к старым ЭБУ: для работы пакета требуется GPT подключение к блоку (его поддерживают АБСОЛЮТНО все ЭБУ), но информации может таковой не быть в доступных к настоящему времени справках. В 90% случаев для GPT сигналов используется следующие контакты ЭБУ: сигнал датчика коленчатого вала, датчиков распредвалов, датчика скорости автомобиля. Имея в распоряжении автомобиль можно &quot;вызвонить&quot; сигналы до ЭБУ и далее на столе попробовать возможные варианты. CAN шина подключается только одна, основная, в которой с блоком работают в BSL режиме, ничего &quot;параллелить&quot; не нужно.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">Рекомендую ознакомиться со следующими ресурсами:</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">1) онлайн -&nbsp;</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;"><a href="https://wiki.obdtuning.de/index.php?title=Kategorie:Steuerger%C3%A4tehersteller" class="weblink">https://wiki.obdtuning.de/index.php?tit ... hersteller</a></span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">&nbsp;- R3/R4 - GPT1/GPT2</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">2) онлайн -&nbsp;</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;"><a href="http://www.evc.de/en/product/bsl/ecu.asp" class="weblink">http://www.evc.de/en/product/bsl/ecu.asp</a></span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">&nbsp;- S1/S2 - GPT1/GPT2</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">3) инструкции K-tag, GPT1/GPT2</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">4)&nbsp;</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;"><a href="https://yadi.sk/d/2Vvf3ATruxoZcA" class="weblink">TRASDATA</a></span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">В список выше со временем добавлю номера контактов GPT, где их нет. Отписывайтесь в теме, не стесняйтесь.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f4f4f4;">Работа с пакетом</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">Подключиться каким либо кабелем к внешнему разъёму ЭБУ согласно распину (подключается: питание, масса, CAN шина, GPT сигналы). После этого.</span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;"><a href="http://pcmflash.ru/forum/viewtopic.php?p=38319#p38319" class="weblink">Что будет, если не подключить GPT</a></span></p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">1. Жмём кнопку Идентификация любым из модулей, входящим в пакет. Выбираем способ управления питанием (как обычно - автомат при наличии кабеля с мозгами, а не просто проводов).</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">Получаем что-то вроде такого:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="2020-01-08_10-51-52" style="margin:0;width:7.5625in;height:3.7292in;border:none" src="2020-01-08_10-51-52.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">Т.е. привычный вывод, как в случае с BSL. В данном случае подключен MED17.7.3.1 c процессором TC1797 и внешней флешкой 2мб. Выделено жирным.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">2. После этого выбираем корректный модуль (в данном случае один из&nbsp;</span><span style="font-size: 11pt; font-style: italic; color: #333333; background-color: #f4f4f4;">&quot;Bosch: MEDC17 (TC1724/1728/1767/1782/1784/1797)&quot;</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">) с нужным типом памяти FLASH/EEPROM.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">3. Жмём Чтение, например для EEPROM (настоятельно рекомендую при работе читать и FLASH и EEPROM, чтобы было куда откатываться после неудачных файлов):</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="2020-01-08_10-53-07" style="margin:0;width:7.5521in;height:2.1146in;border:none" src="2020-01-08_10-53-07.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">Возможно имеет смысл сохранить и пароль процессора, в этом случае, независимо от типа эбу просто выбираем&nbsp;</span><span style="font-size: 11pt; font-style: italic; color: #333333; background-color: #f4f4f4;">&quot;Bosch: MEDC17 BSL PASSWORD&quot;</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">&nbsp;и жмём Чтение. Ещё раз - пароль для работы пакета не требуется. Он нужен исключительно, если вдруг потребуется работа в BSL режиме.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">4. Запись: выбрали корректный модуль, нажали запись. Появляется привычное для пакета 53 окно, за исключением того, что нет возможности отключения пропуска служебной области 14000-1FFFF. Она всегда пропускается и писать там нечего. Если вам кто-то начинает рассказывать, что прошивка не работает из-за того, что там что-то не пишется, то скорее всего человек просто не понимает о чём говорит. Если хотите поменять и там что-то, то пакет 53 позволит осуществить любые фантазии. Как читать пароль - выше.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><img alt="medc17" style="margin:0;width:4.2396in;height:2.6563in;border:none" src="medc17.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">Всё как обычно. В том числе и&nbsp;</span><span style="font-size: 11pt; font-weight: bold; color: #333333; background-color: #f4f4f4;">разблокировка</span><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">. Можно не вскрывая разблокировать ЭБУ для 36го, 39го 66го пакетов. Это очень приятная возможность для тех, кто раньше работал с этими блоками.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 11pt; color: #333333; background-color: #f4f4f4;">5. Нештатные ситуации - в принципе, откуда им взяться на столе. Но даже если связь оборвалась, блок опять запустится в сервисный режим, т.к. загрузчик область 14000-1FFFF не трогает.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
