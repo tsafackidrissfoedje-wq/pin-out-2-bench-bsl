@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+  <title>Med17.7.3 Tc1797 - Pinout CFPM GBE AUTO</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #0b1329;
+      color: #f1f5f9;
+      margin: 0;
+      padding: 16px;
+      line-height: 1.5;
+    }
+    .header {
+      border-bottom: 2px solid #0ea5e9;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 1.25rem;
+      margin: 0 0 6px 0;
+      color: #38bdf8;
+    }
+    .badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .badge {
+      background: rgba(14, 165, 233, 0.15);
+      border: 1px solid rgba(14, 165, 233, 0.4);
+      color: #38bdf8;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .badge-mode {
+      background: rgba(234, 179, 8, 0.15);
+      border: 1px solid rgba(234, 179, 8, 0.4);
+      color: #facc15;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin-bottom: 20px;
+      background: #131d38;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    th {
+      background: #1e293b;
+      color: #94a3b8;
+      text-align: left;
+      padding: 10px 12px;
+      font-weight: 600;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .notes {
+      background: rgba(30, 41, 59, 0.7);
+      border-left: 4px solid #0ea5e9;
+      padding: 12px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+    }
+    .section-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #e2e8f0;
+      margin: 16px 0 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Med17.7.3 Tc1797</h1>
+    <div class="badge-container">
+      <span class="badge">Marque : Bosch</span>
+      <span class="badge">MCU : Infineon TriCore TC1797</span>
+      <span class="badge badge-mode">Brochage Direct / Banc</span>
+      <span class="badge">Carburant : Essence / Petrol</span>
+    </div>
+  </div>
+
+  <div class="notes"><strong>Notes de raccordement :</strong><br>Brochage officiel pour calculateur MED17.7.3 (Bosch). Microcontrôleur: Infineon TriCore TC1797. Mode de raccordement: Brochage Direct / Banc. Tension stabilisée requise: 12V - 14V (min 2.5A). Respecter les résistances de boot si indiquées.</div>
+
+  
+  <div class="section-title">🔌 Tableau de brochage et raccordement</div>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Broche / Pin</th>
+          <th>Couleur du fil</th>
+          <th>Affectation / Signal</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td style="font-weight:bold; color:#f8fafc;">VCC / +12V</td>
+          <td><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background-color:#ef4444; margin-right:6px; vertical-align:middle;"></span><span style="color:#cbd5e1;">Rouge (Red)</span></td>
+          <td style="color:#94a3b8;">Alimentation Permanente (+12V Batterie)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold; color:#f8fafc;">IGN / APC</td>
+          <td><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background-color:#f59e0b; margin-right:6px; vertical-align:middle;"></span><span style="color:#cbd5e1;">Orange / Jaune</span></td>
+          <td style="color:#94a3b8;">Contact Après Contact (+15 Ignition 12V)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold; color:#f8fafc;">GND / Masse</td>
+          <td><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background-color:#10b981; margin-right:6px; vertical-align:middle;"></span><span style="color:#cbd5e1;">Noir (Black) / Bleu</span></td>
+          <td style="color:#94a3b8;">Masse Véhicule / Électronique (Ground)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold; color:#f8fafc;">CAN High (CAN-H)</td>
+          <td><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background-color:#3b82f6; margin-right:6px; vertical-align:middle;"></span><span style="color:#cbd5e1;">Bleu / Blanc</span></td>
+          <td style="color:#94a3b8;">Bus CAN Rapide High (500 kbps)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold; color:#f8fafc;">CAN Low (CAN-L)</td>
+          <td><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background-color:#06b6d4; margin-right:6px; vertical-align:middle;"></span><span style="color:#cbd5e1;">Vert / Jaune</span></td>
+          <td style="color:#94a3b8;">Bus CAN Rapide Low (500 kbps)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold; color:#f8fafc;">K-Line (L-Line)</td>
+          <td><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background-color:#8b5cf6; margin-right:6px; vertical-align:middle;"></span><span style="color:#cbd5e1;">Violet / Gris</span></td>
+          <td style="color:#94a3b8;">Ligne Diagnostic K-Line (ISO 9141-2 / KWP)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold; color:#f8fafc;">GPT 1</td>
+          <td><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background-color:#eab308; margin-right:6px; vertical-align:middle;"></span><span style="color:#cbd5e1;">Jaune (Yellow)</span></td>
+          <td style="color:#94a3b8;">Signal S1 Synchronisation GPT Tricore</td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold; color:#f8fafc;">GPT 2</td>
+          <td><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background-color:#f97316; margin-right:6px; vertical-align:middle;"></span><span style="color:#cbd5e1;">Orange (Orange)</span></td>
+          <td style="color:#94a3b8;">Signal S2 Synchronisation GPT Tricore</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-title">📷 Schémas de câblage et platine</div>
+  
+        <div style="margin-bottom:20px; background:#0f172a; border-radius:8px; padding:10px; text-align:center; border:1px solid rgba(255,255,255,0.08);">
+          <img src="../../assets/images/hexportal_hmfile_hash_d0475cfe.png" alt="Med17.7.3 Tc1797" style="max-width:100%; height:auto; border-radius:6px;" loading="lazy" />
+        </div>
+</body>
+</html>
