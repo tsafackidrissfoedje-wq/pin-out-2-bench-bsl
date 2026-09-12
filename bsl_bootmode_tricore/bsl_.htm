@@ -1,18 +1,32 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD><TITLE>Подключение ЭБУ в BSL режиме</TITLE>
+<HTML><HEAD><TITLE>РџРѕРґРєР»СЋС‡РµРЅРёРµ Р­Р‘РЈ РІ BSL СЂРµР¶РёРјРµ</TITLE>
 <META name=GENERATOR content="MSHTML 11.00.9600.18163">
 <META name=keywords content="">
-<META content="text/html; charset=Windows-1251" http-equiv=Content-Type><LINK 
+<META content="text/html; charset=UTF-8" http-equiv=Content-Type><LINK 
 rel=stylesheet type=text/css href="default.css">
 <STYLE type=text/css>
      body { margin: 0px; background: #FFFFFF; }
    </STYLE>
 
-<SCRIPT type=text/javascript src="jquery.js"></SCRIPT>
+<!-- script disabled -->
 
-<SCRIPT type=text/javascript src="helpman_settings.js"></SCRIPT>
+<!-- script disabled -->
 
-<SCRIPT type=text/javascript src="helpman_topicinit.js"></SCRIPT>
+<!-- script disabled -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<style>
+:root { color-scheme: dark; }
+body { background-color: #0B1329 !important; color: #F8FAFC !important; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important; padding: 14px !important; line-height: 1.6 !important; margin: 0 !important; overflow-y: auto !important; }
+a { color: #38BDF8 !important; text-decoration: none !important; }
+h1, h2, h3, h4 { color: #38BDF8 !important; }
+p, span, div, td, th { color: #CBD5E1; }
+table[style*="#9CBEDC"], table[bgcolor="#9CBEDC"] { background: #101E36 !important; border-radius: 8px !important; }
+td[style*="text-align:right"], td[align="right"] { display: none !important; }
+img { max-width: 100% !important; height: auto !important; border-radius: 8px !important; margin: 12px auto !important; display: block !important; background: #101E36 !important; box-shadow: 0 4px 16px rgba(0,0,0,0.4) !important; border: 1px solid rgba(255,255,255,0.08) !important; }
+table { width: 100% !important; border-collapse: collapse !important; margin: 14px 0 !important; background: #101E36 !important; border-radius: 8px !important; overflow: hidden !important; border: 1px solid rgba(255,255,255,0.08) !important; }
+th, td { padding: 8px 12px !important; border: 1px solid rgba(255,255,255,0.06) !important; font-size: 13.5px !important; }
+th { background: #162644 !important; color: #38BDF8 !important; font-weight: 700 !important; }
+</style>
 </HEAD>
 <BODY><!-- Placeholder for topic body. -->
 <TABLE 
@@ -23,14 +37,14 @@ style="BORDER-TOP-STYLE: none; WIDTH: 100%; BORDER-BOTTOM-STYLE: none; BORDER-RI
     style="PADDING-BOTTOM: 5px; TEXT-ALIGN: left; PADDING-TOP: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px">
       <H1 class=p_Heading1 style="TEXT-ALIGN: center"><SPAN class=f_Heading1 
       style="COLOR: #0000ff"><EM><FONT face="Times New Roman"><FONT 
-      size=6>Пособие по подключению ЭБУ Tricore в BSL режиме</FONT> 
+      size=6>РџРѕСЃРѕР±РёРµ РїРѕ РїРѕРґРєР»СЋС‡РµРЅРёСЋ Р­Р‘РЈ Tricore РІ BSL СЂРµР¶РёРјРµ</FONT> 
       </FONT></EM></SPAN></H1>
       <P><SPAN style="FONT-SIZE: 11pt"><STRONG><EM><FONT size=4 
-      face="Times New Roman">Откройте корпус ЭБУ, соблюдая при этом 
-      осторожность, чтобы не повредить элементы внутри его. &nbsp;Далее 
-      переведите процессор в BSL режим используя либо соответствующие 
-      изображения, либо принимая к сведению следующие данные, в зависимости от 
-      процессора:</FONT></EM></STRONG></SPAN></P>
+      face="Times New Roman">РћС‚РєСЂРѕР№С‚Рµ РєРѕСЂРїСѓСЃ Р­Р‘РЈ, СЃРѕР±Р»СЋРґР°СЏ РїСЂРё СЌС‚РѕРј 
+      РѕСЃС‚РѕСЂРѕР¶РЅРѕСЃС‚СЊ, С‡С‚РѕР±С‹ РЅРµ РїРѕРІСЂРµРґРёС‚СЊ СЌР»РµРјРµРЅС‚С‹ РІРЅСѓС‚СЂРё РµРіРѕ. &nbsp;Р”Р°Р»РµРµ 
+      РїРµСЂРµРІРµРґРёС‚Рµ РїСЂРѕС†РµСЃСЃРѕСЂ РІ BSL СЂРµР¶РёРј РёСЃРїРѕР»СЊР·СѓСЏ Р»РёР±Рѕ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёРµ 
+      РёР·РѕР±СЂР°Р¶РµРЅРёСЏ, Р»РёР±Рѕ РїСЂРёРЅРёРјР°СЏ Рє СЃРІРµРґРµРЅРёСЋ СЃР»РµРґСѓСЋС‰РёРµ РґР°РЅРЅС‹Рµ, РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ 
+      РїСЂРѕС†РµСЃСЃРѕСЂР°:</FONT></EM></STRONG></SPAN></P>
       <P><STRONG><EM></EM></STRONG>&nbsp;</P>
       <P style="MARGIN: 0px 0px 0px 24px"><SPAN 
       style="FONT-SIZE: 11pt"><STRONG>TC1724 - 141-H, 142-L;</STRONG></SPAN></P>
@@ -38,63 +52,63 @@ style="BORDER-TOP-STYLE: none; WIDTH: 100%; BORDER-BOTTOM-STYLE: none; BORDER-RI
       style="FONT-SIZE: 11pt"><STRONG>TC1728 - 173-H, 174-L;</STRONG></SPAN></P>
       <P style="MARGIN: 0px 0px 0px 24px"><SPAN 
       style="FONT-SIZE: 11pt"><STRONG>TC1738/TC1767/TC1782 - 145-L, 167-L, 
-      173-H, 174-L (для ЭБУ Bosch обычно достаточно 167-L, 173-H, 
+      173-H, 174-L (РґР»СЏ Р­Р‘РЈ Bosch РѕР±С‹С‡РЅРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ 167-L, 173-H, 
       174-L);</STRONG></SPAN></P>
       <P style="MARGIN: 0px 0px 0px 24px"><SPAN 
       style="FONT-SIZE: 11pt"><STRONG>TC1762/TC1766 - 86-H, 87-L, 88-L, 90-L 
-      (для ЭБУ Bosch обычно достаточно 87-L);</STRONG></SPAN></P>
+      (РґР»СЏ Р­Р‘РЈ Bosch РѕР±С‹С‡РЅРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ 87-L);</STRONG></SPAN></P>
       <P style="MARGIN: 0px 0px 0px 24px"><SPAN 
-      style="FONT-SIZE: 11pt"><STRONG>TC1793 - A6-L, B6-H, C8-L (для ЭБУ Bosch 
-      обычно достаточно A6-L);</STRONG></SPAN></P>
+      style="FONT-SIZE: 11pt"><STRONG>TC1793 - A6-L, B6-H, C8-L (РґР»СЏ Р­Р‘РЈ Bosch 
+      РѕР±С‹С‡РЅРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ A6-L);</STRONG></SPAN></P>
       <P style="MARGIN: 0px 0px 0px 24px"><SPAN 
-      style="FONT-SIZE: 11pt"><STRONG>TC1796 - A21-H, B21-L, C21-L, D21-L (для 
-      ЭБУ Bosch обычно достаточно B21-L);</STRONG></SPAN></P>
+      style="FONT-SIZE: 11pt"><STRONG>TC1796 - A21-H, B21-L, C21-L, D21-L (РґР»СЏ 
+      Р­Р‘РЈ Bosch РѕР±С‹С‡РЅРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ B21-L);</STRONG></SPAN></P>
       <P style="MARGIN: 0px 0px 0px 24px"><SPAN 
-      style="FONT-SIZE: 11pt"><STRONG>TC1797 - A6-L, A9-L, B6-H, C8-L (для ЭБУ 
-      Bosch обычно достаточно A6-L);</STRONG></SPAN></P>
+      style="FONT-SIZE: 11pt"><STRONG>TC1797 - A6-L, A9-L, B6-H, C8-L (РґР»СЏ Р­Р‘РЈ 
+      Bosch РѕР±С‹С‡РЅРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ A6-L);</STRONG></SPAN></P>
       <P style="MARGIN: 0px 0px 0px 24px">&nbsp;</P>
       <P style="MARGIN: 0px 0px 0px 24px"><SPAN 
       style="FONT-SIZE: 11pt; FONT-WEIGHT: bold; FONT-STYLE: italic">H 
       (</SPAN><SPAN style="FONT-SIZE: 11pt; FONT-STYLE: italic">CNF1) - 
-      соответствует подключению пина процессора к +3.3в через резистор 470ом - 
-      2кОм</SPAN></P>
+      СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РїРѕРґРєР»СЋС‡РµРЅРёСЋ РїРёРЅР° РїСЂРѕС†РµСЃСЃРѕСЂР° Рє +3.3РІ С‡РµСЂРµР· СЂРµР·РёСЃС‚РѕСЂ 470РѕРј - 
+      2РєРћРј</SPAN></P>
       <P style="MARGIN: 0px 0px 0px 24px"><SPAN 
       style="FONT-SIZE: 11pt; FONT-WEIGHT: bold; FONT-STYLE: italic">L 
       (</SPAN><SPAN style="FONT-SIZE: 11pt; FONT-STYLE: italic">BOOT)- 
-      соответствует подключению через резистор 470ом - 2кОм к "массе" ЭБУ. 
+      СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РїРѕРґРєР»СЋС‡РµРЅРёСЋ С‡РµСЂРµР· СЂРµР·РёСЃС‚РѕСЂ 470РѕРј - 2РєРћРј Рє "РјР°СЃСЃРµ" Р­Р‘РЈ. 
       </SPAN></P>
       <P style="MARGIN: 0px 0px 0px 24px"><SPAN 
-      style="FONT-SIZE: 11pt; COLOR: #ff0000; FONT-STYLE: italic"><STRONG>Запрещается 
-      подключение к контактам процессора без резисторов!</STRONG></SPAN></P>
+      style="FONT-SIZE: 11pt; COLOR: #ff0000; FONT-STYLE: italic"><STRONG>Р—Р°РїСЂРµС‰Р°РµС‚СЃСЏ 
+      РїРѕРґРєР»СЋС‡РµРЅРёРµ Рє РєРѕРЅС‚Р°РєС‚Р°Рј РїСЂРѕС†РµСЃСЃРѕСЂР° Р±РµР· СЂРµР·РёСЃС‚РѕСЂРѕРІ!</STRONG></SPAN></P>
       <P style="MARGIN: 0px 0px 0px 24px">&nbsp;</P>
       <P 
       style="PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 13px; MARGIN: 0px 0px 0px 24px; PADDING-RIGHT: 0px"><SPAN 
-      style="FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: 'Symbol'; WIDTH: 13px; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: -13px; DISPLAY: inline-block">·</SPAN><SPAN 
+      style="FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: 'Symbol'; WIDTH: 13px; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: -13px; DISPLAY: inline-block">В·</SPAN><SPAN 
       style="FONT-SIZE: 11pt; FONT-STYLE: italic"><A class=topiclink 
       href="edc17_c01_xrom_tc1796.htm">EDC17</A></SPAN></P>
       <P 
       style="PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 13px; MARGIN: 0px 0px 0px 24px; PADDING-RIGHT: 0px"><SPAN 
-      style="FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: 'Symbol'; WIDTH: 13px; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: -13px; DISPLAY: inline-block">·</SPAN><SPAN 
+      style="FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: 'Symbol'; WIDTH: 13px; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: -13px; DISPLAY: inline-block">В·</SPAN><SPAN 
       style="FONT-SIZE: 11pt; FONT-STYLE: italic"><A class=topiclink 
       href="m17_8_7_irom_tc1762.htm">ME17</A></SPAN></P>
       <P 
       style="PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 13px; MARGIN: 0px 0px 0px 24px; PADDING-RIGHT: 0px"><SPAN 
-      style="FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: 'Symbol'; WIDTH: 13px; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: -13px; DISPLAY: inline-block">·</SPAN><SPAN 
+      style="FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: 'Symbol'; WIDTH: 13px; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: -13px; DISPLAY: inline-block">В·</SPAN><SPAN 
       style="FONT-SIZE: 11pt; FONT-STYLE: italic"><A class=topiclink 
       href="med17_1_irom_tc1796_gpt.htm">MED17</A></SPAN></P>
       <P 
       style="PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 13px; MARGIN: 0px 0px 0px 24px; PADDING-RIGHT: 0px"><SPAN 
-      style="FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: 'Symbol'; WIDTH: 13px; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: -13px; DISPLAY: inline-block">·</SPAN><SPAN 
+      style="FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: 'Symbol'; WIDTH: 13px; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: -13px; DISPLAY: inline-block">В·</SPAN><SPAN 
       style="FONT-SIZE: 11pt; FONT-STYLE: italic"><A class=topiclink 
       href="mev17_2_irom_tc1766.htm">MEV17</A></SPAN></P>
       <P 
       style="PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 13px; MARGIN: 0px 0px 0px 24px; PADDING-RIGHT: 0px"><SPAN 
-      style="FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: 'Symbol'; WIDTH: 13px; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: -13px; DISPLAY: inline-block">·</SPAN><SPAN 
+      style="FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: 'Symbol'; WIDTH: 13px; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: -13px; DISPLAY: inline-block">В·</SPAN><SPAN 
       style="FONT-SIZE: 11pt; FONT-STYLE: italic"><A class=topiclink 
       href="mevd17_2__irom_tc1797_gpt.htm">MEVD17</A></SPAN></P>
       <P 
       style="PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 13px; MARGIN: 0px 0px 0px 24px; PADDING-RIGHT: 0px"><SPAN 
-      style="FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: 'Symbol'; WIDTH: 13px; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: -13px; DISPLAY: inline-block">·</SPAN><SPAN 
+      style="FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: 'Symbol'; WIDTH: 13px; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: -13px; DISPLAY: inline-block">В·</SPAN><SPAN 
       style="FONT-SIZE: 11pt; FONT-STYLE: italic"><A class=topiclink 
       href="ems2204_2207_2211__irom_tc1738.htm">Siemens / 
       Continental</A></SPAN></P>
@@ -112,5 +126,5 @@ style="BORDER-TOP-STYLE: none; WIDTH: 100%; BORDER-BOTTOM-STYLE: none; BORDER-RI
       </P>
       <P 
       style="BACKGROUND: #e4e4e4; TEXT-ALIGN: center; MARGIN: 20px 0px 0px 5px"><SPAN 
-      style="FONT-FAMILY: 'MS Sans Serif'; COLOR: #808080">Copyright © 2018, 
+      style="FONT-FAMILY: 'MS Sans Serif'; COLOR: #808080">Copyright В© 2018, 
       </SPAN></P></TD></TR></TBODY></TABLE></BODY></HTML>
