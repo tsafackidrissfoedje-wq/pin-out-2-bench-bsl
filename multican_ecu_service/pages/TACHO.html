@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>TACHO - MultiCAN ECU-Service Pinout</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      background-color: #0B1329 !important;
+      color: #F8FAFC !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+      margin: 0 !important;
+      padding: 16px !important;
+      line-height: 1.6 !important;
+    }
+    .header {
+      border-bottom: 2px solid #0EA5E9;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 1.3rem;
+      margin: 0 0 8px 0;
+      color: #38BDF8;
+    }
+    .badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .badge {
+      background: rgba(14, 165, 233, 0.15);
+      border: 1px solid rgba(14, 165, 233, 0.4);
+      color: #38BDF8;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .badge-mode {
+      background: rgba(234, 179, 8, 0.15);
+      border: 1px solid rgba(234, 179, 8, 0.4);
+      color: #FACC15;
+    }
+    .diagram-card {
+      background: #101E36;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+    .diagram-header {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #94A3B8;
+      margin-bottom: 8px;
+    }
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+      border-radius: 8px !important;
+      display: block !important;
+      margin: 0 auto !important;
+      background: #080D1A !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4) !important;
+      border: 1px solid rgba(255,255,255,0.06) !important;
+    }
+    .footer-note {
+      font-size: 0.8rem;
+      color: #64748B;
+      text-align: center;
+      margin-top: 24px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>TACHO</h1>
+    <div class="badge-container">
+      <span class="badge">Marque : Multi-Marques</span>
+      <span class="badge badge-mode">Mode : MultiCAN Bench & Boot</span>
+      <span class="badge">Source : ECU-Service</span>
+      <span class="badge">Schémas : 19</span>
+    </div>
+  </div>
+
+  <div class="diagrams">
+    
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #1 : PLYTKA MULTITAHO2.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/PLYTKA%20MULTITAHO2.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/PLYTKA%20MULTITAHO2.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/PLYTKA%20MULTITAHO2.png';}" alt="TACHO - Schéma #1" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #2 : pcrszcze.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/pcrszcze.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/pcrszcze.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/pcrszcze.png';}" alt="TACHO - Schéma #2" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #3 : W204 W212.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/W204%20W212.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/W204%20W212.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/W204%20W212.jpg';}" alt="TACHO - Schéma #3" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #4 : W246.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/W246.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/W246.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/W246.jpg';}" alt="TACHO - Schéma #4" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #5 : w221SZABLON.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/w221SZABLON.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/w221SZABLON.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/w221SZABLON.jpg';}" alt="TACHO - Schéma #5" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #6 : w906 szablon2.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/w906%20szablon2.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/w906%20szablon2.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/w906%20szablon2.jpg';}" alt="TACHO - Schéma #6" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #7 : BMW FXX SZABLON2.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/BMW%20FXX%20SZABLON2.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/BMW%20FXX%20SZABLON2.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/BMW%20FXX%20SZABLON2.jpg';}" alt="TACHO - Schéma #7" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #8 : bmw e65 szablon.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/bmw%20e65%20szablon.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/bmw%20e65%20szablon.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/bmw%20e65%20szablon.jpg';}" alt="TACHO - Schéma #8" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #9 : bmw exx szablon3NARAZ.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/bmw%20exx%20szablon3NARAZ.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/bmw%20exx%20szablon3NARAZ.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/bmw%20exx%20szablon3NARAZ.jpg';}" alt="TACHO - Schéma #9" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #10 : mqbplatformszablonPOPR.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/mqbplatformszablonPOPR.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/mqbplatformszablonPOPR.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/mqbplatformszablonPOPR.jpg';}" alt="TACHO - Schéma #10" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #11 : audi ignition szablon.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/audi%20ignition%20szablon.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/audi%20ignition%20szablon.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/audi%20ignition%20szablon.jpg';}" alt="TACHO - Schéma #11" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #12 : meganeszablon.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/meganeszablon.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/meganeszablon.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/meganeszablon.jpg';}" alt="TACHO - Schéma #12" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #13 : RENAULT CLIO4-2.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/RENAULT%20CLIO4-2.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/RENAULT%20CLIO4-2.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/RENAULT%20CLIO4-2.jpg';}" alt="TACHO - Schéma #13" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #14 : fusion ford mondeo szablon.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/fusion%20ford%20mondeo%20szablon.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/fusion%20ford%20mondeo%20szablon.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/fusion%20ford%20mondeo%20szablon.jpg';}" alt="TACHO - Schéma #14" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #15 : volvoxc40.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/volvoxc40.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/volvoxc40.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/volvoxc40.jpg';}" alt="TACHO - Schéma #15" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #16 : volvo podwojna wtyczka.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/volvo%20podwojna%20wtyczka.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/volvo%20podwojna%20wtyczka.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/volvo%20podwojna%20wtyczka.jpg';}" alt="TACHO - Schéma #16" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #17 : volvo3test szablon.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/volvo3test%20szablon.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/volvo3test%20szablon.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/volvo3test%20szablon.jpg';}" alt="TACHO - Schéma #17" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #18 : MQB2 szablonPOPR.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/MQB2%20szablonPOPR.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/MQB2%20szablonPOPR.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/MQB2%20szablonPOPR.jpg';}" alt="TACHO - Schéma #18" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #19 : audi vr szablon.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/audi%20vr%20szablon.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/audi%20vr%20szablon.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/audi%20vr%20szablon.jpg';}" alt="TACHO - Schéma #19" loading="lazy">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Schémas officiels MultiCAN ECU-Service — Câblage Bench, Boot & CAN
+  </div>
+</body>
+</html>

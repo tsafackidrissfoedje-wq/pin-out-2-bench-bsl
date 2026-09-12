@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>EDC 16 C36 - MultiCAN ECU-Service Pinout</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      background-color: #0B1329 !important;
+      color: #F8FAFC !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+      margin: 0 !important;
+      padding: 16px !important;
+      line-height: 1.6 !important;
+    }
+    .header {
+      border-bottom: 2px solid #0EA5E9;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 1.3rem;
+      margin: 0 0 8px 0;
+      color: #38BDF8;
+    }
+    .badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .badge {
+      background: rgba(14, 165, 233, 0.15);
+      border: 1px solid rgba(14, 165, 233, 0.4);
+      color: #38BDF8;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .badge-mode {
+      background: rgba(234, 179, 8, 0.15);
+      border: 1px solid rgba(234, 179, 8, 0.4);
+      color: #FACC15;
+    }
+    .diagram-card {
+      background: #101E36;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+    .diagram-header {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #94A3B8;
+      margin-bottom: 8px;
+    }
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+      border-radius: 8px !important;
+      display: block !important;
+      margin: 0 auto !important;
+      background: #080D1A !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4) !important;
+      border: 1px solid rgba(255,255,255,0.06) !important;
+    }
+    .footer-note {
+      font-size: 0.8rem;
+      color: #64748B;
+      text-align: center;
+      margin-top: 24px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>EDC 16 C36</h1>
+    <div class="badge-container">
+      <span class="badge">Marque : Multi-Marques</span>
+      <span class="badge badge-mode">Mode : MultiCAN Bench & Boot</span>
+      <span class="badge">Source : ECU-Service</span>
+      <span class="badge">Schémas : 9</span>
+    </div>
+  </div>
+
+  <div class="diagrams">
+    
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #1 : edc16c36 renault.PNG</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/edc16c36%20renault.PNG" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/edc16c36%20renault.PNG" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/edc16c36%20renault.PNG';}" alt="EDC 16 C36 - Schéma #1" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #2 : edc16-cp36-hex.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/edc16-cp36-hex.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/edc16-cp36-hex.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/edc16-cp36-hex.png';}" alt="EDC 16 C36 - Schéma #2" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #3 : edc16c36-png2.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/edc16c36-png2.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/edc16c36-png2.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/edc16c36-png2.png';}" alt="EDC 16 C36 - Schéma #3" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #4 : edc16c36 tyl-png.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/edc16c36%20tyl-png.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/edc16c36%20tyl-png.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/edc16c36%20tyl-png.png';}" alt="EDC 16 C36 - Schéma #4" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #5 : edc16c36szcz.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/edc16c36szcz.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/edc16c36szcz.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/edc16c36szcz.jpg';}" alt="EDC 16 C36 - Schéma #5" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #6 : edc16c36 tyl p.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/edc16c36%20tyl%20p.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/edc16c36%20tyl%20p.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/edc16c36%20tyl%20p.jpg';}" alt="EDC 16 C36 - Schéma #6" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #7 : cutedc16c36.jpg</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/cutedc16c36.jpg" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/cutedc16c36.jpg" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/cutedc16c36.jpg';}" alt="EDC 16 C36 - Schéma #7" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #8 : emu-pcb-relay-text.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/emu-pcb-relay-text.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/emu-pcb-relay-text.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/emu-pcb-relay-text.png';}" alt="EDC 16 C36 - Schéma #8" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #9 : emulatorV2-do-sterownikow.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/emulatorV2-do-sterownikow.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/emulatorV2-do-sterownikow.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/emulatorV2-do-sterownikow.png';}" alt="EDC 16 C36 - Schéma #9" loading="lazy">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Schémas officiels MultiCAN ECU-Service — Câblage Bench, Boot & CAN
+  </div>
+</body>
+</html>

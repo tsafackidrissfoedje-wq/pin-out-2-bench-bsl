@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Valeo V 34 3 - MultiCAN ECU-Service Pinout</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      background-color: #0B1329 !important;
+      color: #F8FAFC !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+      margin: 0 !important;
+      padding: 16px !important;
+      line-height: 1.6 !important;
+    }
+    .header {
+      border-bottom: 2px solid #0EA5E9;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 1.3rem;
+      margin: 0 0 8px 0;
+      color: #38BDF8;
+    }
+    .badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .badge {
+      background: rgba(14, 165, 233, 0.15);
+      border: 1px solid rgba(14, 165, 233, 0.4);
+      color: #38BDF8;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .badge-mode {
+      background: rgba(234, 179, 8, 0.15);
+      border: 1px solid rgba(234, 179, 8, 0.4);
+      color: #FACC15;
+    }
+    .diagram-card {
+      background: #101E36;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+    .diagram-header {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #94A3B8;
+      margin-bottom: 8px;
+    }
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+      border-radius: 8px !important;
+      display: block !important;
+      margin: 0 auto !important;
+      background: #080D1A !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4) !important;
+      border: 1px solid rgba(255,255,255,0.06) !important;
+    }
+    .footer-note {
+      font-size: 0.8rem;
+      color: #64748B;
+      text-align: center;
+      margin-top: 24px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Valeo V 34 3</h1>
+    <div class="badge-container">
+      <span class="badge">Marque : Multi-Marques</span>
+      <span class="badge badge-mode">Mode : MultiCAN Bench & Boot</span>
+      <span class="badge">Source : ECU-Service</span>
+      <span class="badge">Schémas : 12</span>
+    </div>
+  </div>
+
+  <div class="diagrams">
+    
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #1 : j34pt.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/j34pt.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/j34pt.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/j34pt.png';}" alt="Valeo V 34 3 - Schéma #1" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #2 : step1.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/step1.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/step1.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/step1.png';}" alt="Valeo V 34 3 - Schéma #2" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #3 : valeo-v34-hex-step1.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/valeo-v34-hex-step1.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/valeo-v34-hex-step1.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/valeo-v34-hex-step1.png';}" alt="Valeo V 34 3 - Schéma #3" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #4 : step2.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/step2.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/step2.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/step2.png';}" alt="Valeo V 34 3 - Schéma #4" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #5 : valeo-v34-hex-step2.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/valeo-v34-hex-step2.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/valeo-v34-hex-step2.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/valeo-v34-hex-step2.png';}" alt="Valeo V 34 3 - Schéma #5" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #6 : valeov343-2krkoppop2.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/valeov343-2krkoppop2.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/valeov343-2krkoppop2.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/valeov343-2krkoppop2.png';}" alt="Valeo V 34 3 - Schéma #6" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #7 : multican POM KAB NAPIS.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/multican%20POM%20KAB%20NAPIS.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/multican%20POM%20KAB%20NAPIS.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/multican%20POM%20KAB%20NAPIS.png';}" alt="Valeo V 34 3 - Schéma #7" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #8 : exa.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/exa.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/exa.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/exa.png';}" alt="Valeo V 34 3 - Schéma #8" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #9 : SCHEMAT EXAMPLE 0 NA4 PO2zetka.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/SCHEMAT%20EXAMPLE%200%20NA4%20PO2zetka.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/SCHEMAT%20EXAMPLE%200%20NA4%20PO2zetka.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/SCHEMAT%20EXAMPLE%200%20NA4%20PO2zetka.png';}" alt="Valeo V 34 3 - Schéma #9" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #10 : valeo v 34 3 -2 szcz krop.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/valeo%20v%2034%203%20-2%20szcz%20krop.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/valeo%20v%2034%203%20-2%20szcz%20krop.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/valeo%20v%2034%203%20-2%20szcz%20krop.png';}" alt="Valeo V 34 3 - Schéma #10" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #11 : LICZBY DO STEP 2A I 2Bvaleov343.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/LICZBY%20DO%20STEP%202A%20I%202Bvaleov343.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/LICZBY%20DO%20STEP%202A%20I%202Bvaleov343.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/LICZBY%20DO%20STEP%202A%20I%202Bvaleov343.png';}" alt="Valeo V 34 3 - Schéma #11" loading="lazy">
+      </a>
+    </div>
+    <div class="diagram-card">
+      <div class="diagram-header">📷 Schéma #12 : emulatorV2-do-sterownikow.png</div>
+      <a href="https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/emulatorV2-do-sterownikow.png" target="_blank" title="Agrandir en plein écran">
+        <img src="https://raw.githubusercontent.com/tsafackidrissfoedje-wq/pin-out-2-bench-bsl/main/multican_ecu_service/images/emulatorV2-do-sterownikow.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='https://cdn.jsdelivr.net/gh/tsafackidrissfoedje-wq/pin-out-2-bench-bsl@main/multican_ecu_service/images/emulatorV2-do-sterownikow.png';}" alt="Valeo V 34 3 - Schéma #12" loading="lazy">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Schémas officiels MultiCAN ECU-Service — Câblage Bench, Boot & CAN
+  </div>
+</body>
+</html>
